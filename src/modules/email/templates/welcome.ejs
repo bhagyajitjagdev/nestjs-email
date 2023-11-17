@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <%- include("./shared/head.ejs") %>
+  <body>
+    <table
+      class="email-wrapper"
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      role="presentation"
+    >
+      <tr>
+        <td align="center">
+          <table
+            class="email-content"
+            width="100%"
+            cellpadding="0"
+            cellspacing="0"
+            role="presentation"
+          >
+            <tr>
+              <td class="email-masthead">
+                <a
+                  href="https://example.com"
+                  class="f-fallback email-masthead_name"
+                >
+                  Welcome to company
+                </a>
+              </td>
+            </tr>
+            <!-- Email Body -->
+            <tr>
+              <td
+                class="email-body"
+                width="570"
+                cellpadding="0"
+                cellspacing="0"
+              >
+                <table
+                  class="email-body_inner"
+                  align="center"
+                  width="570"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                >
+                  <!-- Body content -->
+                  <tr>
+                    <td class="content-cell">
+                      <div class="f-fallback">
+                        <h1>Welcome, <%= locals.name %>!</h1>
+                        <p>
+                          Thanks for trying company. We’re thrilled to have you
+                          on board.
+                        </p>
+
+                        <p>
+                          If you have any questions, feel free to
+                          <a href="mailto:support@@company.com"
+                            >email our customer success team</a
+                          >. (We're lightning quick at replying.) We also offer
+                          <a href="https://www.company.com/live-chat"
+                            >live chat</a
+                          >
+                          during business hours.
+                        </p>
+                        <p>Thanks, <br />company team</p>
+                        <p>
+                          <strong>P.S.</strong> Need immediate help getting
+                          started? Check out our
+                          <a href="https://www.company.com/help"
+                            >help documentation</a
+                          >. Or, just reply to this
+                          <a href="mailto:support@company.com">email</a>, the
+                          company support team is always ready to help!
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <%- include("./shared/footer.ejs") %>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
